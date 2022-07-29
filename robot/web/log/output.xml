@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220320 22:40:50.844" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="c:\qaninja\robot\web\tests">
+<suite id="s1-s1" name="Checkbox" source="c:\qaninja\robot\web\tests\checkbox.robot">
+<test id="s1-s1-t1" name="Marcando opção com id">
+<kw name="Nova sessão" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220320 22:40:53.581" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<status status="PASS" starttime="20220320 22:40:53.578" endtime="20220320 22:41:30.497"/>
+</kw>
+<status status="PASS" starttime="20220320 22:40:53.575" endtime="20220320 22:41:30.499"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/checkboxes</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220320 22:41:30.502" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/checkboxes'</msg>
+<status status="PASS" starttime="20220320 22:41:30.501" endtime="20220320 22:41:31.318"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${check_thor}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220320 22:41:31.324" level="INFO">Selecting checkbox 'id:thor'.</msg>
+<status status="PASS" starttime="20220320 22:41:31.321" endtime="20220320 22:41:31.852"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>${check_thor}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20220320 22:41:31.855" level="INFO">Verifying checkbox 'id:thor' is selected.</msg>
+<status status="PASS" starttime="20220320 22:41:31.854" endtime="20220320 22:41:31.954"/>
+</kw>
+<kw name="Encerra sessão" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220320 22:41:32.261" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220320 22:41:31.959" endtime="20220320 22:41:32.262"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220320 22:41:32.262" endtime="20220320 22:41:34.692"/>
+</kw>
+<status status="PASS" starttime="20220320 22:41:31.956" endtime="20220320 22:41:34.692"/>
+</kw>
+<status status="PASS" starttime="20220320 22:40:53.569" endtime="20220320 22:41:34.694"/>
+</test>
+<test id="s1-s1-t2" name="Marcando opção com CSS Selector">
+<kw name="Nova sessão" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220320 22:41:34.706" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<status status="PASS" starttime="20220320 22:41:34.704" endtime="20220320 22:41:54.472"/>
+</kw>
+<status status="PASS" starttime="20220320 22:41:34.703" endtime="20220320 22:41:54.473"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/checkboxes</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220320 22:41:54.477" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/checkboxes'</msg>
+<status status="PASS" starttime="20220320 22:41:54.475" endtime="20220320 22:41:54.883"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${check_iron}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220320 22:41:54.886" level="INFO">Selecting checkbox 'css:input[value='iron-man']'.</msg>
+<status status="PASS" starttime="20220320 22:41:54.885" endtime="20220320 22:41:55.191"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>${check_iron}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20220320 22:41:55.195" level="INFO">Verifying checkbox 'css:input[value='iron-man']' is selected.</msg>
+<status status="PASS" starttime="20220320 22:41:55.193" endtime="20220320 22:41:55.291"/>
+</kw>
+<kw name="Encerra sessão" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220320 22:41:56.196" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220320 22:41:55.294" endtime="20220320 22:41:56.197"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220320 22:41:56.198" endtime="20220320 22:42:00.492"/>
+</kw>
+<status status="PASS" starttime="20220320 22:41:55.293" endtime="20220320 22:42:00.494"/>
+</kw>
+<status status="PASS" starttime="20220320 22:41:34.701" endtime="20220320 22:42:00.503"/>
+</test>
+<test id="s1-s1-t3" name="Marcando opção com Xpath">
+<kw name="Nova sessão" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220320 22:42:00.556" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<status status="PASS" starttime="20220320 22:42:00.550" endtime="20220320 22:42:20.586"/>
+</kw>
+<status status="PASS" starttime="20220320 22:42:00.536" endtime="20220320 22:42:20.589"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/checkboxes</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220320 22:42:20.600" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/checkboxes'</msg>
+<status status="PASS" starttime="20220320 22:42:20.596" endtime="20220320 22:42:23.289"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${check_panther}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220320 22:42:23.340" level="INFO">Selecting checkbox 'xpath://*[@id='checkboxes']/input[7]'.</msg>
+<status status="PASS" starttime="20220320 22:42:23.332" endtime="20220320 22:42:24.372"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>${check_panther}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20220320 22:42:24.389" level="INFO">Verifying checkbox 'xpath://*[@id='checkboxes']/input[7]' is selected.</msg>
+<status status="PASS" starttime="20220320 22:42:24.382" endtime="20220320 22:42:24.951"/>
+</kw>
+<kw name="Encerra sessão" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220320 22:42:25.751" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220320 22:42:24.966" endtime="20220320 22:42:25.752"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220320 22:42:25.753" endtime="20220320 22:42:30.034"/>
+</kw>
+<status status="PASS" starttime="20220320 22:42:24.958" endtime="20220320 22:42:30.036"/>
+</kw>
+<tag>ironman</tag>
+<status status="PASS" starttime="20220320 22:42:00.526" endtime="20220320 22:42:30.039"/>
+</test>
+<status status="PASS" starttime="20220320 22:40:51.116" endtime="20220320 22:42:30.058"/>
+</suite>
+<suite id="s1-s2" name="Title" source="c:\qaninja\robot\web\tests\title.robot">
+<test id="s1-s2-t1" name="Should See Page Title">
+<kw name="Nova sessão" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220320 22:42:30.153" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<msg timestamp="20220320 22:42:51.091" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=99.0.4844.74)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011969A3+2582947]
+	Ordinal0 [0x0112A6D1+2139857]
+	Ordinal0 [0x01023960+1063264]
+	Ordinal0 [0x01018092+1015954]
+	Ordinal0 [0x010188C8+1018056]
+	Ordinal0 [0x0101A102+1024258]
+	Ordinal0 [0x01013DE9+998889]
+	Ordinal0 [0x01024DD0+1068496]
+	Ordinal0 [0x01077B12+1407762]
+	Ordinal0 [0x01068366+1344358]
+	Ordinal0 [0x01045176+1200502]
+	Ordinal0 [0x01046066+1204326]
+	GetHandleVerifier [0x0133BE02+1675858]
+	GetHandleVerifier [0x013F036C+2414524]
+	GetHandleVerifier [0x0122BB01+560977]
+	GetHandleVerifier [0x0122A8D3+556323]
+	Ordinal0 [0x0113020E+2163214]
+	Ordinal0 [0x01135078+2183288]
+	Ordinal0 [0x011351C0+2183616]
+	Ordinal0 [0x0113EE1C+2223644]
+	BaseThreadInitThunk [0x76C9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778E7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x778E7A4E+238]
+</msg>
+<msg timestamp="20220320 22:42:51.357" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=99.0.4844.74)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011969A3+2582947]
+	Ordinal0 [0x0112A6D1+2139857]
+	Ordinal0 [0x01023A98+1063576]
+	Ordinal0 [0x01016410+1008656]
+	Ordinal0 [0x01015FE3+1007587]
+	Ordinal0 [0x010155F0+1005040]
+	Ordinal0 [0x01014727+1001255]
+	Ordinal0 [0x01014AF7+1002231]
+	Ordinal0 [0x01020251+1049169]
+	Ordinal0 [0x01015D9D+1007005]
+	Ordinal0 [0x01016A0E+1010190]
+	Ordinal0 [0x01015FFE+1007614]
+	Ordinal0 [0x010155F0+1005040]
+	Ordinal0 [0x01014727+1001255]
+	Ordinal0 [0x010149E6+1001958]
+	Ordinal0 [0x0102518A+1069450]
+	Ordinal0 [0x010788FD+1411325]
+	Ordinal0 [0x0106854C+1344844]
+	Ordinal0 [0x0107834A+1409866]
+	Ordinal0 [0x01068366+1344358]
+	Ordinal0 [0x01045176+1200502]
+	Ordinal0 [0x01046066+1204326]
+	GetHandleVerifier [0x0133BE02+1675858]
+	GetHandleVerifier [0x013F036C+2414524]
+	GetHandleVerifier [0x0122BB01+560977]
+	GetHandleVerifier [0x0122A8D3+556323]
+	Ordinal0 [0x0113020E+2163214]
+	Ordinal0 [0x01135078+2183288]
+	Ordinal0 [0x011351C0+2183616]
+	Ordinal0 [0x0113EE1C+2223644]
+	BaseThreadInitThunk [0x76C9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778E7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x778E7A4E+238]
+</msg>
+<status status="FAIL" starttime="20220320 22:42:30.150" endtime="20220320 22:42:51.359"/>
+</kw>
+<status status="FAIL" starttime="20220320 22:42:30.146" endtime="20220320 22:42:51.374"/>
+</kw>
+<kw name="Encerra sessão" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220320 22:43:15.670" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=99.0.4844.74)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011969A3+2582947]
+	Ordinal0 [0x0112A6D1+2139857]
+	Ordinal0 [0x01023960+1063264]
+	Ordinal0 [0x01018092+1015954]
+	Ordinal0 [0x010188C8+1018056]
+	Ordinal0 [0x0101A102+1024258]
+	Ordinal0 [0x01013DE9+998889]
+	Ordinal0 [0x01024DD0+1068496]
+	Ordinal0 [0x01077B12+1407762]
+	Ordinal0 [0x01068366+1344358]
+	Ordinal0 [0x01045176+1200502]
+	Ordinal0 [0x01046066+1204326]
+	GetHandleVerifier [0x0133BE02+1675858]
+	GetHandleVerifier [0x013F036C+2414524]
+	GetHandleVerifier [0x0122BB01+560977]
+	GetHandleVerifier [0x0122A8D3+556323]
+	Ordinal0 [0x0113020E+2163214]
+	Ordinal0 [0x01135078+2183288]
+	Ordinal0 [0x011351C0+2183616]
+	Ordinal0 [0x0113EE1C+2223644]
+	BaseThreadInitThunk [0x76C9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778E7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x778E7A4E+238]
+</msg>
+<msg timestamp="20220320 22:43:15.760" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=99.0.4844.74)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011969A3+2582947]
+	Ordinal0 [0x0112A6D1+2139857]
+	Ordinal0 [0x01023960+1063264]
+	Ordinal0 [0x01018092+1015954]
+	Ordinal0 [0x010188C8+1018056]
+	Ordinal0 [0x0101A102+1024258]
+	Ordinal0 [0x01013DE9+998889]
+	Ordinal0 [0x01024DD0+1068496]
+	Ordinal0 [0x01077B12+1407762]
+	Ordinal0 [0x01068366+1344358]
+	Ordinal0 [0x01045176+1200502]
+	Ordinal0 [0x01046066+1204326]
+	GetHandleVerifier [0x0133BE02+1675858]
+	GetHandleVerifier [0x013F036C+2414524]
+	GetHandleVerifier [0x0122BB01+560977]
+	GetHandleVerifier [0x0122A8D3+556323]
+	Ordinal0 [0x0113020E+2163214]
+	Ordinal0 [0x01135078+2183288]
+	Ordinal0 [0x011351C0+2183616]
+	Ordinal0 [0x0113EE1C+2223644]
+	BaseThreadInitThunk [0x76C9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778E7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x778E7A4E+238]
+</msg>
+<status status="FAIL" starttime="20220320 22:42:51.390" endtime="20220320 22:43:15.760"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220320 22:43:15.761" endtime="20220320 22:43:17.980"/>
+</kw>
+<status status="FAIL" starttime="20220320 22:42:51.381" endtime="20220320 22:43:17.983">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=99.0.4844.74)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011969A3+2582947]
+	Ordinal0 [0x0112A6D1+2139857]
+	Ordinal0 [0x01023960+1063264]
+	Ordinal0 [0x01018092+1015954]
+	Ordinal0 [0x010188C8+1018056]
+	Ordinal0 [0x0101A102+1024258]
+	Ordinal0 [0x01013DE9+998889]
+	Ordinal0 [0x01024DD0+1068496]
+	Ordinal0 [0x01077B12+1407762]
+	Ordinal0 [0x01068366+1344358]
+	Ordinal0 [0x01045176+1200502]
+	Ordinal0 [0x01046066+1204326]
+	GetHandleVerifier [0x0133BE02+1675858]
+	GetHandleVerifier [0x013F036C+2414524]
+	GetHandleVerifier [0x0122BB01+560977]
+	GetHandleVerifier [0x0122A8D3+556323]
+	Ordinal0 [0x0113020E+2163214]
+	Ordinal0 [0x01135078+2183288]
+	Ordinal0 [0x011351C0+2183616]
+	Ordinal0 [0x0113EE1C+2223644]
+	BaseThreadInitThunk [0x76C9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778E7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x778E7A4E+238]
+</status>
+</kw>
+<status status="FAIL" starttime="20220320 22:42:30.137" endtime="20220320 22:43:17.986">Setup failed:
+WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=99.0.4844.74)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011969A3+2582947]
+	Ordinal0 [0x0112A6D1+2139857]
+	Ordinal0 [0x01023A98+1063576]
+	Ordinal0 [0x01016410+1008656]
+	Ordinal0 [0x01015FE3+1007587]
+	Ordinal0 [0x010155F0+1005040]
+	Ordinal0 [0x01014727+1001255]
+	Ordinal0 [0x01014AF7+1002231]
+	Ordinal0 [0x01020251+1049169]
+	Ordinal0 [0x01015D9D+1007005]
+	Ordinal0 [0x01016A0E+1010190]
+	Ordinal0 [0x01015FFE+1007614]
+	Ordinal0 [0x010155F0+1005040]
+	Ordinal0 [0x01014727+1001255]
+	Ordinal0 [0x010149E6+1001958]
+	Ordinal0 [0x0102518A+1069450]
+	Ordinal0 [0x010788FD+1411325]
+	Ordinal0 [0x0106854C+1344844]
+	Ordinal0 [0x0107834A+1409866]
+	Ordinal0 [0x01068366+1344358]
+	Ordinal0 [0x01045176+1200502]
+	Ordinal0 [0x01046066+1204326]
+	GetHandleVerifier [0x0133BE02+1675858]
+	GetHandleVerifier [0x013F036C+2414524]
+	GetHandleVerifier [0x0122BB01+560977]
+	GetHandleVerifier [0x0122A8D3+556323]
+	Ordinal0 [0x0113020E+2163214]
+	Ordinal0 [0x01135078+2183288]
+	Ordinal0 [0x011351C0+2183616]
+	Ordinal0 [0x0113EE1C+2223644]
+	BaseThreadInitThunk [0x76C9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778E7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x778E7A4E+238]
+
+
+Also teardown failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=99.0.4844.74)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011969A3+2582947]
+	Ordinal0 [0x0112A6D1+2139857]
+	Ordinal0 [0x01023960+1063264]
+	Ordinal0 [0x01018092+1015954]
+	Ordinal0 [0x010188C8+1018056]
+	Ordinal0 [0x0101A102+1024258]
+	Ordinal0 [0x01013DE9+998889]
+	Ordinal0 [0x01024DD0+1068496]
+	Ordinal0 [0x01077B12+1407762]
+	Ordinal0 [0x01068366+1344358]
+	Ordinal0 [0x01045176+1200502]
+	Ordinal0 [0x01046066+1204326]
+	GetHandleVerifier [0x0133BE02+1675858]
+	GetHandleVerifier [0x013F036C+2414524]
+	GetHandleVerifier [0x0122BB01+560977]
+	GetHandleVerifier [0x0122A8D3+556323]
+	Ordinal0 [0x0113020E+2163214]
+	Ordinal0 [0x01135078+2183288]
+	Ordinal0 [0x011351C0+2183616]
+	Ordinal0 [0x0113EE1C+2223644]
+	BaseThreadInitThunk [0x76C9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778E7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x778E7A4E+238]
+</status>
+</test>
+<status status="FAIL" starttime="20220320 22:42:30.087" endtime="20220320 22:43:18.256"/>
+</suite>
+<status status="FAIL" starttime="20220320 22:40:50.856" endtime="20220320 22:43:18.301"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">ironman</stat>
+</tag>
+<suite>
+<stat pass="3" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Checkbox">Tests.Checkbox</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="Title">Tests.Title</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220320 22:42:51.091" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=99.0.4844.74)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011969A3+2582947]
+	Ordinal0 [0x0112A6D1+2139857]
+	Ordinal0 [0x01023960+1063264]
+	Ordinal0 [0x01018092+1015954]
+	Ordinal0 [0x010188C8+1018056]
+	Ordinal0 [0x0101A102+1024258]
+	Ordinal0 [0x01013DE9+998889]
+	Ordinal0 [0x01024DD0+1068496]
+	Ordinal0 [0x01077B12+1407762]
+	Ordinal0 [0x01068366+1344358]
+	Ordinal0 [0x01045176+1200502]
+	Ordinal0 [0x01046066+1204326]
+	GetHandleVerifier [0x0133BE02+1675858]
+	GetHandleVerifier [0x013F036C+2414524]
+	GetHandleVerifier [0x0122BB01+560977]
+	GetHandleVerifier [0x0122A8D3+556323]
+	Ordinal0 [0x0113020E+2163214]
+	Ordinal0 [0x01135078+2183288]
+	Ordinal0 [0x011351C0+2183616]
+	Ordinal0 [0x0113EE1C+2223644]
+	BaseThreadInitThunk [0x76C9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778E7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x778E7A4E+238]
+</msg>
+<msg timestamp="20220320 22:43:15.670" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=99.0.4844.74)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011969A3+2582947]
+	Ordinal0 [0x0112A6D1+2139857]
+	Ordinal0 [0x01023960+1063264]
+	Ordinal0 [0x01018092+1015954]
+	Ordinal0 [0x010188C8+1018056]
+	Ordinal0 [0x0101A102+1024258]
+	Ordinal0 [0x01013DE9+998889]
+	Ordinal0 [0x01024DD0+1068496]
+	Ordinal0 [0x01077B12+1407762]
+	Ordinal0 [0x01068366+1344358]
+	Ordinal0 [0x01045176+1200502]
+	Ordinal0 [0x01046066+1204326]
+	GetHandleVerifier [0x0133BE02+1675858]
+	GetHandleVerifier [0x013F036C+2414524]
+	GetHandleVerifier [0x0122BB01+560977]
+	GetHandleVerifier [0x0122A8D3+556323]
+	Ordinal0 [0x0113020E+2163214]
+	Ordinal0 [0x01135078+2183288]
+	Ordinal0 [0x011351C0+2183616]
+	Ordinal0 [0x0113EE1C+2223644]
+	BaseThreadInitThunk [0x76C9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778E7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x778E7A4E+238]
+</msg>
+</errors>
+</robot>

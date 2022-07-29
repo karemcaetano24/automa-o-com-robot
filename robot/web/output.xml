@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220319 00:17:31.454" rpa="false" schemaversion="2">
+<suite id="s1" name="Title" source="c:\qaninja\robot\web\title.robot">
+<test id="s1-t1" name="Should See Page Title">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://training-wheels-protocol.herokuapp.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220319 00:17:33.124" level="INFO">Opening browser 'chrome' to base url 'http://training-wheels-protocol.herokuapp.com'.</msg>
+<status status="PASS" starttime="20220319 00:17:33.123" endtime="20220319 00:17:49.829"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Training Wheels Protocol</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220319 00:17:49.849" level="INFO">Page title is 'Training Wheels Protocol'.</msg>
+<status status="PASS" starttime="20220319 00:17:49.831" endtime="20220319 00:17:49.850"/>
+</kw>
+<status status="PASS" starttime="20220319 00:17:33.120" endtime="20220319 00:17:49.852"/>
+</test>
+<status status="PASS" starttime="20220319 00:17:31.460" endtime="20220319 00:17:49.864"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Title">Title</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
